@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Navigator</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 10%;
+            text-align: center;
+            color: rgb(41, 185, 182);
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #A1C4FD, #C2E9FB);
+        }
+
+        h1 {
+            border-bottom: 2px solid rgb(41, 185, 182);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        div {
+            margin: 20px 0;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+
+        b {
+            color: rgb(80, 80, 80);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>This is the Navigator Page</h1>
+
+    <div id="appName"></div>
+    <div id="product"></div>
+    <div id="appVersion"></div>
+    <div id="userAgent"></div>
+    <div id="platform"></div>
+    <div id="language"></div>
+
+    <script>
+        document.getElementById("appName").innerHTML = "<b>Navigator.appName is </b>" + navigator.appName;
+        document.getElementById("product").innerHTML = "<b>Navigator.product is </b>" + navigator.product;
+        document.getElementById("appVersion").innerHTML = "<b>Navigator.appVersion is </b>" + navigator.appVersion;
+        document.getElementById("userAgent").innerHTML = "<b>Navigator.userAgent is </b>" + navigator.userAgent;
+        document.getElementById("platform").innerHTML = "<b>Navigator.platform is </b>" + navigator.platform;
+        document.getElementById("language").innerHTML = "<b>Navigator.language is </b>" + navigator.language;
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navigator</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+            color: rgb(81, 79, 214);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        b {
+            display: block;
+            margin-bottom: 30px;
+            font-size: 1.2em;
+        }
+
+        div {
+            margin-bottom: 10px;
+            transition: all 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <b>This page will help you discover your screen resolution</b>
+
+    <div id="WindowWidth"></div>
+    <div id="WindowHeight"></div>
+
+    <script>
+        document.getElementById("WindowWidth").innerHTML = "Browser inner window width: " + window.innerWidth + "px<br>"
+        document.getElementById("WindowHeight").innerHTML = "Browser inner window height: " + window.innerHeight + "px";
+    </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="0; url=navbar.html" />
+        <title>Browser Details</title>
+        <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+            color: #001F3F;
+            min-height: 100vh;
+            transition: all 0.3s;
+        }
+
+        #navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .dropdown {
+            position: relative;
+            margin: 0 10px;
+        }
+
+        .dropbtn {
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #f9f9f9;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        h1 {
+            padding-top: 5%;
+            text-align: center;
+        }
+
+        p {
+            padding-top: 1.5%;
+            text-align: center;
+        }
+
+        a {
+            color: #0077CC;
+        }
+
+        #navbar {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px 0;
+            display: flex; 
+            justify-content: center;
+            align-items: center; 
+            position: absolute;
+            top: 0; 
+            left: 0;
+            right: 0; 
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <li class="dropdown">
+            <a href="navbar.html" class="dropbtn">Home</a>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Course</a>
+            <div class="dropdown-content">
+                <a href="https://tophat.com/" target="_blank">TopHat</a>
+                <a href="https://drive.google.com/drive/folders/1Ak_kUW07RMNZgiEnxxbbLKjSg__lKE6j" target="_blank">Course Google Drive</a>
+                <a href="http://w3schools.com" target="_blank">W3Schools</a>
+                <a href="https://gaia.cs.umass.edu/kurose_ross/eighth.php" target="_blank">Kurose and Ross Author/Book page</a>
+                <a href="https://www.geeksforgeeks.org/web-development/" target="_blank">Geeksforgeeks</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">About</a>
+            <div class="dropdown-content">
+                <a href="developer.html">About The Developer</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Browser</a>
+            <div class="dropdown-content">
+                <a href="navigator.html">Navigator</a>
+                <a href="window.html">Window</a>
+                <a href="screen.html">Screen</a>
+                <a href="location.html">Location</a>
+                <a href="geolocation.html">Geolocation</a>
+            </div>
+        </li>
+    </nav>
+</body>
+</html>
